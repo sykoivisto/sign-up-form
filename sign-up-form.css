@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",sans-serif;
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 2;
+}
+
+.sidebar {
+    background-image: url("sign-up-form.jpg");
+    background-position: center;
+    background-size: cover;
+    flex: 1;
+
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+
+
+    text-align: center;
+    position: relative;
+}
+
+.sidebar-attribution {
+    grid-row: 10 / 11;
+    align-self: end;
+}
+
+.sidebar-attribution * {
+    color: white;
+    font-size: 10px;
+}
+
+.sidebar-logo {
+    grid-row: 3;
+    display: grid;
+    align-content: center;
+}
+
+.sidebar-logo h1{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 50px;
+
+    background-color: rgba(0,0,0,.5);
+    padding: 20px 0px 10px 0px;
+}
+
+.sign-up-em {
+    font-style: italic;
+}
