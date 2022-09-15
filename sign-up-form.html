@@ -10,45 +10,64 @@
     <link rel="stylesheet" href="sign-up-form.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar-logo">
-            <h1>CARCLUB</h1>
-        </div>
-        <div class="sidebar-attribution">
-            <p>Photo by <a href="https://unsplash.com/@jcmend">Jaime Castrillon</a> on <a href="https://unsplash.com/">Unsplash</a></p>
-        </div>
-    </div>
-    <main>
-        <p>This is not a real club! You know you want to sign up anyway. Go ahead. Fill out the form to get started.</p>
-        <p>You <span class="sign-up-em">know</span> you want to.</p>
-        <p>Let's do this!</p>
-        <form action="">
-
-            <div class="sign-up-form-inputs">
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name">
-    
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name">
-    
-                <label for="email">EMAIL</label>
-                <input type="email" id="email">
-    
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" id="phone">
-    
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password">
-    
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" id="confirm-password">
+    <div class="content">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <h1>CARCLUB</h1>
             </div>
+            <div class="sidebar-attribution">
+                <p>Photo by <a href="https://unsplash.com/@jcmend">Jaime Castrillon</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+        <main>
+            <div class="sign-up-form-text">
+                <p>This is not a real club! You know you want to sign up anyway. Go ahead. Fill out the form to get started.</p>
+                <p>You <span class="sign-up-em">know</span> you want to.</p>
+                <p>Let's do this!</p>
+            </div>
+            <form action="">
+    
+                <div class="sign-up-form-inputs">
+                    <div class="row">
+                        <div class="column">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" required>
+                        </div>
+                        <div class="column">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="column">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="column">
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+                    </div>
+                </div>
 
-            <button type="submit">Create Account</button>
+                <div class="shadow"></div>
 
-        </form>
-
-        <p>Already have an account? <a href="#">Log in</a></p>
-    </main>
+                <button class="submit-button" type="submit">Create Account</button>
+    
+            </form>
+    
+            <p class="already-have-account">Already have an account? <a href="#">Log in</a></p>
+        </main>
+    </div>
 </body>
 </html>
